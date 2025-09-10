@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# CYBER FLAY v9 (SAFE) — Full features package (OSINT optimal, username check, phone lookup, JSO helper, utilities)
+# CYBER FLAY (SAFE) — Full features package (OSINT optimal, username check, phone lookup, JSO helper, utilities)
 # SAFE edition: excludes defacement/exploit automation. Use only for legal/authorized testing & education.
 
 set -euo pipefail
@@ -28,7 +28,7 @@ banner(){
    \          /
     `--------`
 EOF
-  echo -e "${GRN}        CYBER FLAY v9${RST}"
+  echo -e "${GRN}        CYBER FLAY${RST}"
   echo -e "${CYN}>>> TOOLS INI DIBUAT OLEH CYBER FLAY <<<${RST}\n"
 }
 
@@ -222,7 +222,7 @@ menu_lain(){
 # ---------------- Dark Web (info) ----------------
 darkweb_info(){
   clear
-  echo -e "${RED}== DARK WEB (EDUKASI) ==${RST}"
+  echo -e "${RED}== DARK WEB ==${RST}"
   echo "- Link informasional (mirror). Untuk akses .onion yang sebenarnya gunakan Tor/Orbot."
   read -rp "Tekan Enter untuk buka Hidden Wiki (info)..." _
   if has termux-open-url; then termux-open-url "https://thehiddenwiki.org/"; elif has xdg-open; then xdg-open "https://thehiddenwiki.org/"; else echo "Buka manual: https://thehiddenwiki.org/"; fi
@@ -233,9 +233,9 @@ darkweb_info(){
 about_menu(){
   clear
   banner
-  echo "Versi: v9 (SAFE)"
+  echo "Versi: 1.0 (SAFE)"
   echo "Author: FLAY"
-  echo "Gunakan hanya untuk tujuan legal/edukasi/bug bounty."
+  echo "SAYA ADALAH HACKER FLAY."
   pause
 }
 
@@ -363,7 +363,7 @@ main(){
     echo -e "${GRN}│  ${YEL}[3] OSINT - Phone Lookup           ${GRN}│${RST}"
     echo -e "${GRN}│  ${YEL}[4] Pembuatan JSO (helper)        ${GRN}│${RST}"
     echo -e "${GRN}│  ${YEL}[5] Menu Lain (utilities)         ${GRN}│${RST}"
-    echo -e "${GRN}│  ${YEL}[6] Dark Web (edu)                ${GRN}│${RST}"
+    echo -e "${GRN}│  ${YEL}[6] Dark Web                ${GRN}│${RST}"
     echo -e "${GRN}│  ${YEL}[7] About                          ${GRN}│${RST}"
     echo -e "${GRN}│  ${YEL}[0] Keluar                         ${GRN}│${RST}"
     echo -e "${GRN}└────────────────────────────────────────────┘${RST}"
